@@ -1,0 +1,43 @@
+.contact-section {
+  padding: 40px 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.input-field,
+.textarea-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.textarea-field {
+  height: 120px;
+}
+
+.contact-btn {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 17px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-btn:hover {
+  background: #3c39c8;
+}

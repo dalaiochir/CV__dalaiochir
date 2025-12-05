@@ -1,0 +1,33 @@
+@import "../styles/hero.css";
+@import "../styles/projects.css";
+@import "../styles/skills.css";
+@import "../styles/timeline.css";
+@import "../styles/contact.css";
+@import "../styles/profile.css";
+
+/* Basic reset */
+* { box-sizing: border-box; margin:0; padding:0; }
+body { font-family: Inter, Arial, sans-serif; background: #f6f8ff; color: #0f1724; }
+
+/* Navbar */
+.navbar { display:flex; justify-content:space-between; align-items:center; padding:18px 32px; background:#fff; box-shadow:0 6px 18px rgba(16,24,40,0.06); position:sticky; top:0; z-index:20;}
+.nav-logo { font-weight:700; font-size:18px; }
+.nav-right a { margin-left:18px; color:#0f1724; text-decoration:none; font-weight:600; }
+
+/* Buttons */
+.btn { display:inline-block; padding:10px 14px; border-radius:8px; text-decoration:none; font-weight:600; }
+.btn.primary { background: linear-gradient(90deg,#4f46e5,#6366f1); color:white; box-shadow:0 6px 18px rgba(99,102,241,0.18); }
+.btn.ghost { border:1px solid rgba(15,23,36,0.06); background:white; color:#0f1724; }
+
+/* Page reveal */
+.page-animate { opacity:0; animation: pageReveal 0.45s ease forwards; }
+@keyframes pageReveal { from{opacity:0; transform:translateY(10px);} to{opacity:1; transform:none;} }
+
+/* Badges */
+.badge { display:inline-block; padding:6px 10px; border-radius:6px; background:#eef2ff; color:#4f46e5; margin-right:8px; font-weight:600; }
+
+/* Footer */
+.site-footer { text-align:center; padding:24px; color:#64748b; font-size:14px; margin-top:40px; }
+
+/* Utility */
+.mobile-fade-slide { will-change: transform, opacity; }

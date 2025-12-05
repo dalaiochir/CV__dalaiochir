@@ -1,0 +1,39 @@
+.profile-section {
+  padding: 40px 20px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.profile-left img {
+  width: 230px;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.profile-right {
+  max-width: 500px;
+}
+
+.profile-right h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.profile-right p {
+  color: #555;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .profile-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-left img {
+    width: 70%;
+  }
+}
